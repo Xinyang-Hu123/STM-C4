@@ -1,0 +1,29 @@
+# STM-C4
+
+<div align="right">
+  <a href="README.md">English</a> | <strong>简体中文</strong>
+</div>
+
+基于 STM32 的 CS2 C4 模型。
+
+[![Bilibili 粉丝](https://img.shields.io/badge/dynamic/json?color=blue&label=BiliBili&labelColor=white&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=1084866085&logo=bilibili&style=flat-square)](https://space.bilibili.com/1084866085)
+[![YouTube](https://img.shields.io/badge/YouTube-white?logo=youtube&logoColor=FF0000&style=flat-square)](https://www.youtube.com/@lyyontop)
+[![GitHub last commit](https://img.shields.io/github/last-commit/LanYangYang321/STM-C4?color=yellow&logo=github&labelColor=black&label=Latest&style=flat-square)](https://github.com/LanYangYang321/Clash-For-Python)
+
+![model-v4-pic](pic/model-V4-pic.png)
+
+## 简介
+
+- 基于 STM32F103C8T6 的 CS2 C4 外观模型，主要用于学习、展示与收藏。
+- 开发环境：Keil5 + ST-Link，外部 8 MHz 晶振。
+- 快速开始：**[Ver4.0](Ver4.0/README_zh.md)**
+- 配置修改请参考：[`Ver4.0/CONFIG.md`](Ver4.0/CONFIG.md)
+
+## 特别感谢
+
+- 感谢 Bilibili 博主「下界石嘤」提供 3D 打印模型：[https://space.bilibili.com/318570767](https://space.bilibili.com/318570767)
+
+## 免责声明
+
+本项目为外观复刻模型，不具备任何真实功能或危险性。
+任何改装、滥用或非法使用均与原作者无关，原作者不承担由此产生的责任。

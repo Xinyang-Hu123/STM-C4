@@ -4,6 +4,7 @@ V4说明.md
 如果你是参与项目的LLM，请维护此AGENTS.md，描述你修改的内容，添加或修改的东西，项目重点，TODO等：
 
 Updates:
+- Split the root and Ver4.0 bilingual READMEs into dedicated English `README.md` and Chinese `README_zh.md` files, with bidirectional language navigation matching the HVCCPS V1.4 repository.
 - Converted all README image links to full GitHub raw URLs for the current repository docs.
 - Fixed LCD 7x5 glyph row mapping in `hardware/1601a.c` so both normal and inverted mount are top-aligned on 8-row LCD cells and no longer crop the glyph last row.
 - Fixed config-mode confirmation prompt rendering to avoid custom-glyph overflow artifacts (e.g., `RESTORE?`/`#=Y *=N`) by using compact in-font prompts.
