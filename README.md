@@ -5,7 +5,7 @@ A CS2 C4 model based on STM32.
 [![YouTube](https://img.shields.io/badge/YouTube-white?logo=youtube&logoColor=FF0000&style=flat-square)](https://www.youtube.com/@lyyontop)
 [![GitHub last commit](https://img.shields.io/github/last-commit/LanYangYang321/STM-C4?color=yellow&logo=github&labelColor=black&label=Latest&style=flat-square)](https://github.com/LanYangYang321/Clash-For-Python)
 
-![model-v4-pic](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/model-V4-pic.png)
+![model-v4-pic](pic/model-V4-pic.png)
 
 ## 简介
 - 基于 STM32F103C8T6 的 CS2 C4 外观模型，主要用于学习、展示与收藏。
@@ -34,4 +34,3 @@ A CS2 C4 model based on STM32.
 ## Disclaimer
 This project is a replica appearance model and has no real functionality or hazardous capability.
 Any modification, misuse, or illegal use is not associated with the original creator, who assumes no responsibility for any consequences.
-

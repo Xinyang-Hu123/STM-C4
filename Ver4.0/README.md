@@ -1,7 +1,7 @@
 ﻿# STM-C4 Ver4.0
 
 [![GitHub](https://img.shields.io/badge/GitHub-azidopp-181717?style=flat&logo=github&logoColor=white)](https://github.com/AzidoPP/STM-C4)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?logo=opensourceinitiative&logoColor=white)](https://github.com/AzidoPP/STM-C4/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?logo=opensourceinitiative&logoColor=white)](../LICENSE)
 [![YouTube](https://img.shields.io/badge/YouTube-@lyyontop-FF0000?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@lyyontop)
 [![bilibili](https://img.shields.io/badge/bilibili-1084866085-00A1D6?style=flat&logo=bilibili&logoColor=white)](https://space.bilibili.com/1084866085)
 
@@ -14,36 +14,38 @@ OSHWHUB 硬件开源地址：https://oshwhub.com/azidopp/CS2-C4
 [English](#english)
 ### 实物图：
 
-![Picture](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/model-V4-pic.png)
+![Picture](../pic/model-V4-pic.png)
 
 ### 快速开始
 1. PCB 打样
-   - 主板 Gerber：[PCB_Gerber/Gerber_C4_MainBoardV4.1.zip](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/PCB_Gerber/Gerber_C4_MainBoardV4.1.zip)
-   - LCD 转接板 Gerber：[PCB_Gerber/Gerber_LCD1601_AdapterBoardV4.0.zip](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/PCB_Gerber/Gerber_LCD1601_AdapterBoardV4.0.zip)
-   - 立创EDA 原始工程文件（本仓库）：[EasyEDA_proj](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/EasyEDA_proj)
+   - 主板 Gerber：[PCB_Gerber/Gerber_C4_MainBoardV4.1.zip](PCB_Gerber/Gerber_C4_MainBoardV4.1.zip)
+   - LCD 转接板 Gerber：[PCB_Gerber/Gerber_LCD1601_AdapterBoardV4.0.zip](PCB_Gerber/Gerber_LCD1601_AdapterBoardV4.0.zip)
+   - 立创EDA 原始工程文件（本仓库）：[EasyEDA_proj](EasyEDA_proj/)
    - 详情工程请参考OSHWHUB开源硬件平台[工程](https://oshwhub.com/azidopp/CS2-C4)
 2. 采购 BOM
-   - BOM 文件：[BOM/BOM.xlsx](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/BOM/BOM.xlsx)
+   - BOM 文件：[BOM/BOM.xlsx](BOM/BOM.xlsx)
    - 9V 电池建议使用碱性电池（输出电流更稳定）
 3. 焊接与装配
    - LCD1601 转接板焊接示例：
-     ![LCD1601 adapter pic1](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/pic1.png)
-     ![LCD1601 adapter pic2](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/pic2.png)
-     ![LCD1601 adapter pic3](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/adapterboard.jpg)
-   - 3D 打印外壳/填充件（可选）：见 [3DP_Models](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/3DP_Models)
+     ![LCD1601 adapter pic1](../pic/pic1.png)
+     ![LCD1601 adapter pic2](../pic/pic2.png)
+     ![LCD1601 adapter pic3](../pic/adapterboard.jpg)
+   - 3D 打印外壳/填充件（可选）：见 [3DP_Models](3DP_Models/)
    - 完整组装：
-     ![Full assambled board](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/pic4.png)
+     ![Full assambled board](../pic/pic4.png)
 4. 烧录固件
-   - Keil 工程：[Keil_proj/c4](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/Keil_proj/c4)
+   - Keil 工程：[Keil_proj/c4](Keil_proj/c4/)
    - ST-Link V2 接口位置：
-     ![ST-Link header pic3](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/pic3.png)
+     ![ST-Link header pic3](../pic/pic3.png)
    - 引脚顺序：3.3V / SWDIO / SWCLK / GND
+   - 烧录固件后，如果LCD1601显示屏不显示，请旋转电位器调整屏幕对比度，左右旋转，直到出现清晰的文字。
+     ![potentiometer](../pic/potentiometer.png)
 5. MP3 音效（可选）
-   - 将 [TFCard_Files/](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/TFCard_Files) 内容拷贝到 TF 卡根目录
-   - 详细说明见：[TFCard_Files](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/TFCard_Files)
+   - 将 [TFCard_Files/](TFCard_Files/) 内容拷贝到 TF 卡根目录
+   - 详细说明见：[TFCard_Files](TFCard_Files/)
 6. 配置与修改
-   - 用户配置说明：[`CONFIG.md`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/CONFIG.md)
-   - 默认配置定义文件：[`Keil_proj/c4/user/config.h`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/Keil_proj/c4/user/config.h)
+   - 用户配置说明：[`CONFIG.md`](CONFIG.md)
+   - 默认配置定义文件：[`Keil_proj/c4/user/config.h`](Keil_proj/c4/user/config.h)
    - 可在不重新烧录的情况下修改单个配置（上电时按住 `#` 进入配置模式）
    - 新增倒计时数字显示开关：`CONFIG_DIGITAL_COUNTDOWN_ENABLE`
 
@@ -61,12 +63,12 @@ OSHWHUB 硬件开源地址：https://oshwhub.com/azidopp/CS2-C4
   - 未启用T音乐盒：播放纯爆炸音效→（可选）T胜利播报。
 
 ### 配置
-- 用户配置指南（含编号与操作步骤）：[`CONFIG.md`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/CONFIG.md)
-- 默认配置定义文件：[`Keil_proj/c4/user/config.h`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/Keil_proj/c4/user/config.h)
-- 技术说明：[`V4说明.md`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/V4%E8%AF%B4%E6%98%8E.md)
+- 用户配置指南（含编号与操作步骤）：[`CONFIG.md`](CONFIG.md)
+- 默认配置定义文件：[`Keil_proj/c4/user/config.h`](Keil_proj/c4/user/config.h)
+- 技术说明：[`V4说明.md`](V4说明.md)
 
 ### 详细说明
-更多细节与原理说明请移步[Github仓库](https://github.com/AzidoPP/STM-C4)查看：[V4说明.md](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/V4说明.md)
+更多细节与原理说明请移步[Github仓库](https://github.com/AzidoPP/STM-C4)查看：[V4说明.md](V4说明.md)
 
 ### 免责声明
 本项目为外观光电复刻模型，不具备任何真实功能或危险性。  
@@ -84,36 +86,38 @@ OSHWHUB hardware page: https://oshwhub.com/azidopp/CS2-C4
 
 ### Real Picture：
 
-![Picture](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/model-V4-pic.png)
+![Picture](../pic/model-V4-pic.png)
 
 ### Quick Start
 1. PCB fabrication
-   - Main board Gerber: [PCB_Gerber/Gerber_C4_MainBoardV4.1.zip](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/PCB_Gerber/Gerber_C4_MainBoardV4.1.zip)
-   - LCD adapter Gerber: [PCB_Gerber/Gerber_LCD1601_AdapterBoardV4.0.zip](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/PCB_Gerber/Gerber_LCD1601_AdapterBoardV4.0.zip)
-   - EasyEDA original project files (this repo): [EasyEDA_proj](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/EasyEDA_proj)
+   - Main board Gerber: [PCB_Gerber/Gerber_C4_MainBoardV4.1.zip](PCB_Gerber/Gerber_C4_MainBoardV4.1.zip)
+   - LCD adapter Gerber: [PCB_Gerber/Gerber_LCD1601_AdapterBoardV4.0.zip](PCB_Gerber/Gerber_LCD1601_AdapterBoardV4.0.zip)
+   - EasyEDA original project files (this repo): [EasyEDA_proj](EasyEDA_proj/)
    - See OSHWHUB for the full hardware [project files](https://oshwhub.com/azidopp/CS2-C4)
 2. BOM purchase
-   - BOM file: [BOM/BOM.xlsx](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/BOM/BOM.xlsx)
+   - BOM file: [BOM/BOM.xlsx](BOM/BOM.xlsx)
    - 9V alkaline batteries are recommended for more stable current output
 3. Soldering & assembly
    - LCD1601 adapter soldering example:
-     ![LCD1601 adapter pic1](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/pic1.png)
-     ![LCD1601 adapter pic2](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/pic2.png)
-     ![LCD1601 adapter pic3](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/adapterboard.jpg)
-   - 3D printed shell/fillers (optional): see [3DP_Models](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/3DP_Models)
+     ![LCD1601 adapter pic1](../pic/pic1.png)
+     ![LCD1601 adapter pic2](../pic/pic2.png)
+     ![LCD1601 adapter pic3](../pic/adapterboard.jpg)
+   - 3D printed shell/fillers (optional): see [3DP_Models](3DP_Models/)
    - Fully assembled board:
-     ![Full assambled board](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/pic4.png)
+     ![Full assambled board](../pic/pic4.png)
 4. Flash firmware
-   - Keil project: [Keil_proj/c4](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/Keil_proj/c4)
+   - Keil project: [Keil_proj/c4](Keil_proj/c4/)
    - ST-Link V2 header location:
-     ![ST-Link header pic3](https://raw.githubusercontent.com/AzidoPP/STM-C4/main/pic/pic3.png)
+     ![ST-Link header pic3](../pic/pic3.png)
    - Pin order: 3.3V / SWDIO / SWCLK / GND
+   - After flashing the firmware, if the LCD1601 shows no text, rotate the potentiometer in either direction to adjust the display contrast until the text is clear.
+     ![potentiometer](../pic/potentiometer.png)
 5. MP3 audio (optional)
-   - Copy [TFCard_Files/](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/TFCard_Files) contents to the TF card root
-   - Details: [TFCard_Files](https://github.com/AzidoPP/STM-C4/tree/main/Ver4.0/TFCard_Files)
+   - Copy [TFCard_Files/](TFCard_Files/) contents to the TF card root
+   - Details: [TFCard_Files](TFCard_Files/)
 6. Configuration and tuning
-   - User guide: [`CONFIG.md`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/CONFIG.md)
-   - Default configuration source: [`config.h`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/Keil_proj/c4/user/config.h)
+   - User guide: [`CONFIG.md`](CONFIG.md)
+   - Default configuration source: [`config.h`](Keil_proj/c4/user/config.h)
    - Supports single-item configuration update without reflashing (hold `#` during power-on)
    - Added digital countdown toggle: `CONFIG_DIGITAL_COUNTDOWN_ENABLE`
 
@@ -131,12 +135,12 @@ OSHWHUB hardware page: https://oshwhub.com/azidopp/CS2-C4
   - Without T music box: play pure explosion track -> (optional) T win announcement.
 
 ### Configuration
-- User-facing configuration guide: [`CONFIG.md`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/CONFIG.md)
-- Technical notes: [`V4说明.md`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/V4%E8%AF%B4%E6%98%8E.md)
-- Default configuration source: [`config.h`](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/Keil_proj/c4/user/config.h)
+- User-facing configuration guide: [`CONFIG.md`](CONFIG.md)
+- Technical notes: [`V4说明.md`](V4说明.md)
+- Default configuration source: [`config.h`](Keil_proj/c4/user/config.h)
 
 ### Detailed Docs
-For deeper details and theory, go to [Github repo](https://github.com/AzidoPP/STM-C4) and see the Chinese document: [V4说明.md](https://github.com/AzidoPP/STM-C4/blob/main/Ver4.0/V4说明.md)
+For deeper details and theory, go to [Github repo](https://github.com/AzidoPP/STM-C4) and see the Chinese document: [V4说明.md](V4说明.md)
 
 ### Disclaimer
 This project is a visual/electronic replica and does not have any real functionality or danger.  
